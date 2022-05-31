@@ -23,5 +23,32 @@ git mv archivo.txt archivo1.txt : para cambiar de un nombre a otro y lo aggrega 
 
 
 ///////para hacer que un archivo no se incluya nunca en nuestro repositorio/////////
-creas un archivo que se debe llamar .gitignore sin extencion que dentro contenga la ruta de los archivos a ignorar.
+creas un archivo que se debe llamar .gitignore sin extencion que dentro contenga la ruta de los archivos a ignorar y este archivo creado le hacemos commit para que git omita las rutas que tiene adentro.
+
+////////////////para ver menos informacion de el status usamos : git status -s 
+para mostrar mas informacion detallada de cambios realizados que no se a pasado aun a la etapa de stage:git diff
+para mostrar mas informaccion detallada de cambios realizados que estan en la etapa de stage:git diff --staged
+
+
+///////////////////para ver todo el historial de todo nuetro repositorio////////////////////
+git log :nos muestra el historial detallado junto con los datos de quien realizo los cambios.
+git log --oneline:nos muestra el historial junto a un pequeño hash de identificacion junto a el mensaje que agregamos del commit.
+
+/////////////////////////////////////branch o ramas //////////////////////////////////////////
+
+git branch : esto nos indica en que rama estamos y que ramas hay.
+git checkout -b ramaNueva: asi creamos una rama nueva.
+git checkout master :para cambiarte de rama.
+git merge ramaNueva :para traer los cambios que se hizo en una rama a la rama master usamos esto desde la rama a donde la queremos traer.
+
+////////////////////////////////////como subir el codigo a la nueve//////////////////////////////////////
+git remote add origin https://github.com/kripto-c/curso-github.git : con esto enlazamos nuestro repositorio a nuestro git ese link lo sacas de github despues de crearlo.
+
+git push -u origin main :aqui estamos creando la rama main dentro de nuestro repositorio github.
+nos pedira nuestro nombre de usuario y una key que conseguimos en github.
+
+con esto ya estara configurado tu repositorio cuando vayas a scribir mas codigo solo debes hacer lo anterios primero lo pasas al stage luego el commit y finalmente : git push
+
+nota# en caso de que estes trabajando en una rama y la quieres subir sin hacer un merge usa : git push -u origin ramaNueva 
+
 
