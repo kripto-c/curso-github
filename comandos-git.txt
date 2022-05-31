@@ -1,0 +1,27 @@
+git init :para iniciar un repositorio git dentro de una carpeta
+
+///////////eliminar archivo/////////
+rm archivo.txt:para eliminar archivo luego se debe agegar a la estapa de stage.
+git add archivo.txt:asi lo agregamos a  la etapa de stage.
+git status :prar ve en que etapa se encuentra, luego hacer commit para que los cambios surgan.
+git commint -m "eliminando archivo":aqui hacemos commit y ponemos un msj que haga sentido.
+
+  todo esto no lo podemos ahorrar solo escribiendo : git rm archivo.txt 
+
+///////////////////////////////////////////////////////////////////////////////////////////
+git restore --stage archivo.txt : esto para sacar algun cambio que hayamos pasado a la etapa de stage.
+git restore archivo.txt :con esto podemos recuperar el archivo eliminado.
+
+
+////////////////////mover o cambiar nombre/////////////////////
+mv archivo.txt archivo1.txt :para cambiar de un nombre a otro.
+git status:ver el estado.
+git add archivo.txt archivo1.txt :se deben de aggregar los dos asi para poder hacer el cambio de nombre
+git commit -m "renombrando archivo":por ultimo hacer el commit para que surja efecto.   
+////////////////////////////
+git mv archivo.txt archivo1.txt : para cambiar de un nombre a otro y lo aggrega a stage sin tener que hacer todo lo anterior pero igual debes hacer commit para cambiar la etapa.
+
+
+///////para hacer que un archivo no se incluya nunca en nuestro repositorio/////////
+creas un archivo que se debe llamar .gitignore sin extencion que dentro contenga la ruta de los archivos a ignorar.
+
